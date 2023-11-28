@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  website:
+    image: xdebug-test
+    build: ./website
+    volumes:
+      - ./website/www:/var/www/html/
+    ports:
+      - 8080:80
+    
